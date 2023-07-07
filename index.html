@@ -7,8 +7,8 @@
     <title>Hosterr</title>
   </head>
   <body>
-    <header class="header">
-      <a href="#"> Hosterr </a>
+    <header class="header container">
+      <a href="#" class="logo"> Hosterr </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#">Plans</a></li>
@@ -16,6 +16,8 @@
           <li>
             <a class="main-nav-link" href="#">Why Hosterr</a>
           </li>
+        </ul>
+        <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#">Sign in</a></li>
           <li><a class="main-nav-link cta" href="#">Join Waitlist</a></li>
         </ul>
@@ -25,7 +27,7 @@
     <!-- Main -->
     <main>
       <!-- Section Hero -->
-      <section class="section-hero">
+      <section class="section-hero container">
         <div class="text-box">
           <div class="hero-copy">
             <h1 class="hero-heading">
@@ -38,21 +40,23 @@
             </p>
           </div>
 
-          <form action="#" class="form">
-            <div class="email-subscription">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter e-mail address"
-              />
-              <button class="cta" type="submit">Join Waitlist</button>
-            </div>
-          </form>
-          <p>
-            <span class="icon icon-checkmark">🔥</span> No span, ever.
-            Unsubscribe anytime.
-          </p>
+          <div class="form-container">
+            <form action="#" class="form">
+              <div class="email-subscription">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter e-mail address"
+                />
+                <button class="cta" type="submit">Join Waitlist</button>
+              </div>
+            </form>
+            <p>
+              <span class="icon icon-checkmark">🔥</span> No span, ever.
+              Unsubscribe anytime.
+            </p>
+          </div>
         </div>
 
         <div class="hero-img-box">
@@ -64,7 +68,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <aside class="aside">
       <ul class="social-links">
         <li><a href="#">Facebook</a></li>
         <li><a href="#">Instagram</a></li>
@@ -78,6 +82,6 @@
           <a href="#"><strong>Talk to a specialist</strong></a>
         </div>
       </div>
-    </footer>
+    </aside>
   </body>
 </html>

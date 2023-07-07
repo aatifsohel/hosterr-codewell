@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&display=swap");
 
+:root {
+  --main-bg: #f9f4e8;
+  --cta-bg: #4976eb;
+  --white: #fffefe;
+  --black: #000000;
+  --grey: #555554;
+  --pink-gr: #eb5672;
+  --yellow-gr: #ebae53;
+  --tick-mark-bg: #44b197;
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -15,9 +26,70 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  /* font-family: "Playfair Display", serif; */
+  background-color: var(--main-bg);
+  height: 100vh;
+  line-height: 1.6;
 }
 
-img {
-  width: 20%;
+a:link,
+a:visited {
+  text-decoration: none;
+  color: var(--grey);
+}
+
+.header {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.4rem 0;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.4rem;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.section-hero {
+  display: flex;
+  border: 1px solid red;
+  justify-content: space-between;
+  gap: 9.6rem;
+  padding: 6.4rem;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.hero-heading {
+  font-family: "Playfair Display", serif;
+  font-size: 3.6rem;
+  line-height: 1;
+}
+
+.hero-description {
+  font-size: 1.6rem;
+}
+
+.model-img {
+  width: 50%;
+}
+
+.aside {
+  display: flex;
+  justify-content: space-between;
 }
