@@ -37,6 +37,12 @@ a:visited {
   color: var(--grey);
 }
 
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+/* Header */
 .header {
   border: 1px solid red;
   display: flex;
@@ -47,7 +53,7 @@ a:visited {
 .main-nav {
   display: flex;
   justify-content: space-between;
-  gap: 2.4rem;
+  gap: 4.2rem;
 }
 
 .main-nav-list {
@@ -56,28 +62,45 @@ a:visited {
   gap: 2.4rem;
 }
 
-.container {
-  max-width: 80rem;
-  margin: 0 auto;
+.main-nav-link:link,
+.main-nav-link:visited {
+  font-size: 1.4rem;
+  color: var(--grey);
 }
 
+.cta {
+  border: 1px solid rgb(0, 0, 0);
+}
+
+/* Section Hero */
 .section-hero {
   display: flex;
   border: 1px solid red;
   justify-content: space-between;
   gap: 9.6rem;
-  padding: 6.4rem;
+  padding: 6.4rem 0;
 }
 
 .text-box {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+  border: 1px solid red;
+}
+
+.hero-copy {
+  display: flex;
+  gap: 2.4rem;
+  flex-direction: column;
+}
+
+.hero-heading,
+.logo {
+  font-family: "Playfair Display", serif;
 }
 
 .hero-heading {
-  font-family: "Playfair Display", serif;
-  font-size: 3.6rem;
+  font-size: 4.2rem;
   line-height: 1;
 }
 
@@ -85,8 +108,40 @@ a:visited {
   font-size: 1.6rem;
 }
 
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.email-subscription {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+
+#email {
+  padding: 0.8rem;
+  border-radius: 4px;
+}
+
+button {
+  border: none;
+  border-radius: 9px;
+  background-color: var(--cta-bg);
+  color: var(--white);
+  padding: 1.4rem 2.8rem;
+  cursor: pointer;
+}
+
+/* Image Box */
+.hero-img-box {
+  border: 1px solid red;
+}
 .model-img {
   width: 50%;
+  display: block;
+  border: 1px solid red;
 }
 
 .aside {
